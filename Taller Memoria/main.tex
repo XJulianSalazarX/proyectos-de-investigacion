@@ -41,20 +41,23 @@
 \newpage
 
 \section{¿Qué es la memoria del computador?}
-La memoria de una computadora es el espacio o el lugar en donde se almacena los datos e instrucciones de un computador, la memoria principal de un computador es la memoria RAM (Random Access Memory), en esta memoria se carga la información de las programas o archivos que están siendo utilizados por el computador, y al dejar de ser usados, son borrados de la memoria, para así de lugar a que pueda usarse otros programas o archivos.
+La memoria de una computadora es el espacio o el lugar en donde se almacena los datos e instrucciones de un computador, la memoria principal es la memoria RAM (Random Access Memory), en esta memoria se carga la información de las programas o archivos que están siendo utilizados en un computador, y al dejar de ser usados, son borrados de la memoria, para así de lugar a que pueda usarse otros programas o archivos.
 \vspace{0.5cm}
 
-Por ejemplo, al abrir un archivo, la memoria recibe que se quiere realizar una acción, este la pasa al microprocesador, y la información se borra de la memoria, el microprocesador toma los datos o el archivo del disco duro (donde se almacena la información del computador) y lo carga en la memoria, para que este pueda ser usado, luego, cuando se quiera cerrar dicho archivo, los datos de esté se eliminan de la memoria, y si se han hecho cambios son almacenados en el disco duro.\cite{Salazar}
+Por ejemplo, al abrir un archivo, la memoria recibe que se quiere realizar una acción, este la pasa al microprocesador, y la información se borra de la memoria, el microprocesador toma los datos o el archivo del disco duro (donde se almacena la información del computador) y lo carga en la memoria, para que este pueda ser usado, luego, cuando se quiera cerrar dicho archivo, los datos de esté se eliminan de la memoria, y si se han hecho cambios, son almacenados en el disco duro.\cite{Salazar}
 
 
 \section{Tipos de memoria} \label{contenido}
-En un computador podemos encontrar distintos tipos de memoria, entre estos están el disco duro, la memoria RAM y la memoria caché.
+En un computador podemos encontrar distintos tipos de memoria, entre estas están: el disco duro, la memoria RAM y la memoria caché.
 
 \subsection{Disco Duro}
 El disco duro es el lugar en el cual se almacena toda la información que se encuentra en una computadora, por lo general, el disco duro tiene una capacidad del orden de los gigabytes y terabytes, está ubicado en la tarjeta madre, y podemos encontrar de dos tipos, las unidades de disco mecánico HDD (Hard Disk Drives) y las unidades de estado sólido o SSD (Solid State Drive)
 \vspace{0.5cm}
 
-La principal deferencia entre ambos tipos de discos es que el HDD (unidad de disco mecánico) funciona con una serie de discos que giran a alta velocidad, mientras un cabezal magnético escribe y lee datos en el disco, mientras que el SSD (unidad de estado solido) utiliza chips de memoria no volátil, y para escribir y leer datos se hace mediante impulsos eléctricos.\cite{andres2017cual} 
+La principal deferencia entre ambos tipos de discos es que el HDD (unidad de disco mecánico) funciona con una serie de discos que giran a alta velocidad, mientras un cabezal magnético escribe y lee datos en el disco\cite{andres2017cual}; mientras que el SSD (unidad de estado solido) utiliza chips de memoria no volátil, y para escribir y leer datos se hace mediante impulsos eléctricos.\cite{andres2017cual}
+
+\subsection{Memoria virtual}
+La memoria virtual es un espacio de memoria en el disco duro que se emplea cuando la memoria principal esta funcionando casi que al máximo, almacenando parte de los datos que se están usando; al computador hacer uso de la memoria virtual, se ve afectado su rendimiento, ya que el disco duro es más lento que la memoria RAM.\cite{rebollo2011memoria}
 
 \subsection{Memoria RAM}
 La memoria RAM (Random Access Memory) es la memoria principal de un computador, en donde se guarda de manera temporal los programas que se están ejecutando, está memoria  guarda la información, como su nombre lo indica, de forma aleatoria, a diferencia del disco solido que lo hace de manera secuencial, lo que hace a la memoria RAM más rápida.\cite{rebollo2011memoria}
@@ -66,7 +69,7 @@ La memoria caché se encuentra entre el procesador y la RAM o dentro del procesa
 Para solucionar dicho problema la memoria caché almacena los datos que más se estén utilizando, sin embargo, la memoria caché al tener mucho menos espacio que la RAM, solo puede guardar una cantidad limitada de datos.\cite{Salazar}
 
 \section{¿Cómo se gestiona la memoria en un computador?}
-La memoria es gestionada por el sistema operativo del computador, el cual se encarga de administrar espacios de memoria a los programas que están siendo ejecutados, así, como liberar los espacios de memoria que ya no están siendo utilizados; la parte del sistema operativo que se encarga de gestionar la memoria se conoce como administrador de memoria.
+La memoria es gestionada por el sistema operativo del computador, el cual se encarga de administrar espacios de memoria a los programas que están siendo ejecutados, así, como liberar los espacios de memoria que ya no están siendo utilizados; "la parte del sistema operativo que se encarga de gestionar la memoria se conoce como administrador de memoria."\cite{aguilera2015sistemas}
 \vspace{0.5cm}
 
 El administrador de memoria tiene que cumplir los requisitos de reubicación (los programas deben ser cargados y descargados de la memoria), protección (proteger que los espacios de memoria que están siendo utilizados, por el sistema operativo o los programas que estén en ejecución no sean, para que no sean usados por otros programas), compartición (algunos procesos que deban compartir información, pueden acceder al mismo espacio de memoria), organización lógica (los programas se escriban como módulos) y organización física (trasladar información entre la memoria principal y la secundaria).\cite{aguilera2015sistemas} 
